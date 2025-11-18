@@ -1,0 +1,233 @@
+/* Сброс стандартных отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF8C00	; /* Яркий акцентный цвет */
+    
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF8C00	;
+}
+
+/* Главный баннер */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./фото/vibe.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+    margin-top: 60px; /* Чтобы учесть фиксированную шапку */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #FF8C00;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    
+}
+
+.cta-button:hover {
+    background: #FF8C00	;
+    opacity: 0.95;
+    transform: scale(0.95);
+}
+
+/* Секции */
+section {
+    padding: 5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+/* Услуги */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.service-item h3 {
+    font-size: 25px;
+}
+.service-item:hover {
+    transform: translateY(-5px);
+
+}
+
+/* ПОРТФОЛИО - КОЛЛАЖ */
+.collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.collage img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s, opacity 0.3s;
+    cursor: pointer;
+    opacity:0.9;
+}
+
+.collage img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/* О нас */
+.about ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about li {
+    padding: 0.5rem 0;
+    font-size: 20px;
+}
+
+/* Контакты */
+.contact {
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.contact-info {
+    margin: 2rem 0;
+}
+
+.contact-info p {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #FF8C00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Подвал */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Здесь можно сделать гамбургер-меню */
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .collage {
+        grid-template-columns: 1fr;
+    }
+}
+
