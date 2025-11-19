@@ -208,6 +208,26 @@ section h2 {
     font-weight: bold;
 }
 
+.contact-form a{
+    text-decoration: none;
+    color:#FF8C00
+}
+
+.politic{
+    display: flex;
+    align-items:center;
+    height: 50px;
+}
+
+
+.chek-politic{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
 /* Подвал */
 footer {
     background: #333;
