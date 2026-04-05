@@ -1,11 +1,11 @@
 :root {
-    --bg: #f7f2eb;
-    --paper: #fffdfa;
-    --ink: #202124;
-    --muted: #575b64;
-    --accent: #d65d2f;
-    --accent-deep: #b94b21;
-    --line: #d9c8b9;
+    --bg: #fff4e8;
+    --paper: #fffdf9;
+    --ink: #17120f;
+    --muted: #433d36;
+    --accent: #ff6a00;
+    --accent-deep: #c94f00;
+    --line: #c89a72;
     --shadow: 0 14px 40px rgba(64, 43, 27, 0.12);
     --radius-xl: 28px;
     --radius-md: 18px;
@@ -27,8 +27,8 @@ body {
     font-family: 'Manrope', sans-serif;
     color: var(--ink);
     background:
-        radial-gradient(circle at 7% 10%, #f6dcc0 0, transparent 27%),
-        radial-gradient(circle at 92% 88%, #f8e8d3 0, transparent 30%),
+        radial-gradient(circle at 8% 12%, #ffd6b3 0, transparent 30%),
+        radial-gradient(circle at 90% 85%, #ffdeb6 0, transparent 33%),
         var(--bg);
 }
 
@@ -62,8 +62,8 @@ a {
     top: 0;
     z-index: 50;
     backdrop-filter: blur(10px);
-    background: rgba(247, 242, 235, 0.82);
-    border-bottom: 1px solid rgba(99, 74, 53, 0.12);
+    background: rgba(255, 249, 242, 0.9);
+    border-bottom: 1px solid rgba(124, 82, 44, 0.24);
 }
 
 .nav-wrap {
@@ -88,7 +88,7 @@ a {
 }
 
 .nav-links a {
-    color: var(--muted);
+    color: var(--ink);
     font-weight: 600;
     transition: color 0.2s ease;
 }
@@ -144,9 +144,21 @@ h1 {
     font-size: clamp(2rem, 4vw, 3.4rem);
 }
 
+.hero-slogan {
+    margin-top: 0.2rem;
+}
+
+.hero-slogan span {
+    display: inline-block;
+    padding: 0.55rem 0.8rem 0.62rem;
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    background: linear-gradient(90deg, #fff8f0 0%, #ffefd9 100%);
+}
+
 .hero-subtitle {
     margin-top: 1.2rem;
-    color: var(--muted);
+    color: #2f2924;
     max-width: 60ch;
     line-height: 1.65;
 }
@@ -184,8 +196,8 @@ h1 {
 }
 
 .btn-ghost {
-    border: 1px solid var(--line);
-    background: var(--paper);
+    border: 1px solid #9e6a3a;
+    background: #fff;
 }
 
 .hero-media {
@@ -231,9 +243,9 @@ h1 {
 }
 
 .metrics article {
-    border: 1px solid rgba(173, 148, 126, 0.3);
+    border: 1px solid rgba(161, 101, 43, 0.42);
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.82);
+    background: #fff;
     padding: 1.1rem;
 }
 
@@ -261,6 +273,8 @@ section {
 
 .section-head h2 {
     font-size: clamp(1.65rem, 3.1vw, 2.5rem);
+    display: inline;
+    box-shadow: inset 0 -0.34em 0 rgba(255, 106, 0, 0.18);
 }
 
 .project-grid {
@@ -272,7 +286,7 @@ section {
 .project-card {
     grid-column: span 4;
     background: var(--paper);
-    border: 1px solid rgba(170, 145, 121, 0.33);
+    border: 1px solid rgba(151, 97, 42, 0.45);
     border-radius: var(--radius-md);
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -281,7 +295,7 @@ section {
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-6px) rotate(-0.35deg);
 }
 
 .project-card.large {
@@ -327,7 +341,8 @@ section {
     padding: 1.2rem;
     border-radius: var(--radius-md);
     background: #fff;
-    border: 1px solid rgba(170, 145, 121, 0.33);
+    border: 1px solid rgba(151, 97, 42, 0.45);
+    border-left: 5px solid var(--accent);
 }
 
 .adv-grid h3 {
@@ -353,7 +368,7 @@ section {
     align-items: flex-start;
     padding: 1rem;
     border-radius: var(--radius-md);
-    border: 1px solid rgba(170, 145, 121, 0.33);
+    border: 1px solid rgba(151, 97, 42, 0.45);
     background: #fff;
 }
 
@@ -380,8 +395,8 @@ section {
 
 .contact-card {
     border-radius: var(--radius-xl);
-    border: 1px solid rgba(170, 145, 121, 0.33);
-    background: linear-gradient(145deg, #fffdfa, #fff4eb);
+    border: 1px solid rgba(151, 97, 42, 0.45);
+    background: linear-gradient(145deg, #fffaf4, #ffe8d1);
     box-shadow: var(--shadow);
     padding: clamp(1.1rem, 3.5vw, 2rem);
 }
@@ -406,7 +421,7 @@ section {
 .contact-links a {
     padding: 0.55rem 0.85rem;
     border-radius: 999px;
-    border: 1px solid rgba(170, 145, 121, 0.4);
+    border: 1px solid rgba(151, 97, 42, 0.52);
     background: #fff;
     font-weight: 600;
 }
@@ -422,7 +437,7 @@ section {
     width: 100%;
     font: inherit;
     background: #fff;
-    border: 1px solid rgba(170, 145, 121, 0.5);
+    border: 1px solid rgba(151, 97, 42, 0.56);
     border-radius: 10px;
     padding: 0.82rem;
 }
