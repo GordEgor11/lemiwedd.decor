@@ -1,23 +1,28 @@
-// Плавная прокрутка к якорям
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 80, // Учитываем высоту шапки
-                behavior: 'smooth'
-            });
-        }
-    });
-});
+const revealItems = document.querySelectorAll('.reveal');
 
-// Обработка формы (заглушка)
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Спасибо! Мы скоро с вами свяжемся.');
-    this.reset();
-});
+const revealObserver = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.18,
+        rootMargin: '0px 0px -30px 0px'
+    }
+);
+
+revealItems.forEach(item => revealObserver.observe(item));
+
+const form = document.querySelector('.contact-form');
+
+if (form) {
+    form.addEventListener('submit', event => {
+        event.preventDefault();
+        alert('Спасибо! Мы получили заявку и скоро свяжемся с вами.');
+        form.reset();
+    });
+}
