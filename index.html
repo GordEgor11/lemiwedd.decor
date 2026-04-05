@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lemiwedd.decor | Фотозоны, в которые хочется возвращаться</title>
-    <meta name="description" content="Lemiwedd.decor — делаем фотозоны для свадеб, корпоративов, выпускных и частных праздников. Берем все на себя: от идеи до монтажа.">
+    <title>Lemiwedd.decor | Креативные фотозоны под ваше событие</title>
+    <meta name="description" content="Lemiwedd.decor — креативные фотозоны для свадеб, корпоративов и частных событий. Идея, производство и монтаж под ключ.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grain"></div>
+    <div class="noise"></div>
 
     <header class="site-header">
         <div class="container nav-wrap">
@@ -19,12 +19,12 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#projects">Проекты</a></li>
-                    <li><a href="#advantages">Почему мы</a></li>
-                    <li><a href="#workflow">Этапы</a></li>
+                    <li><a href="#approach">Подход</a></li>
+                    <li><a href="#steps">Этапы</a></li>
                     <li><a href="#contact">Контакты</a></li>
                 </ul>
             </nav>
-            <a class="nav-cta" href="#contact">Обсудить проект</a>
+            <a class="nav-cta" href="#contact">Оставить заявку</a>
         </div>
     </header>
 
@@ -32,196 +32,153 @@
         <section id="hero" class="hero container reveal">
             <div class="hero-text">
                 <p class="eyebrow">Фотозоны и декор под ключ</p>
-                <h1 class="hero-slogan"><span>Фотозоны, где гости сами тянутся фотографироваться</span></h1>
+                <h1 class="hero-slogan">
+                    <span>Фотозоны, возле которых гости не проходят мимо</span>
+                </h1>
                 <p class="hero-subtitle">
-                    Вместе выбираем стиль, готовим декор, привозим и собираем все на площадке.
-                    В итоге у вас не просто красивый фон, а точка притяжения для гостей и классных фото.
+                    Создаем визуал, который хочется снимать и пересылать друзьям.
+                    От первой идеи до монтажа на площадке все берем на себя.
                 </p>
                 <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Хочу обсудить идею</a>
-                    <a href="#projects" class="btn btn-ghost">Смотреть проекты</a>
+                    <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+                    <a href="#projects" class="btn btn-outline">Смотреть кейсы</a>
                 </div>
             </div>
+
             <div class="hero-media">
-                <img src="./фото/vibe.jpg" alt="Фотозона Lemiwedd.decor на мероприятии">
-                <div class="floating-card">
-                    <span>Монтаж на площадке</span>
+                <article class="hero-photo hero-photo-main">
+                    <img src="./фото/vibe.jpg" alt="Креативная фотозона на мероприятии">
+                </article>
+                <article class="hero-photo hero-photo-small">
+                    <img src="./фото/blog-fest.jpg" alt="Яркая фотозона для фестиваля">
+                </article>
+                <div class="hero-badge">
+                    <p>Монтаж</p>
                     <strong>от 3 часов</strong>
                 </div>
             </div>
         </section>
 
-        <section class="metrics container reveal">
-            <article>
-                <strong>120+</strong>
-                <p>проектов уже сделали</p>
-            </article>
-            <article>
-                <strong>5 лет</strong>
-                <p>оформляем события разного формата</p>
-            </article>
-            <article>
-                <strong>1 день</strong>
-                <p>в среднем на подготовку идеи</p>
-            </article>
-            <article>
-                <strong>90%</strong>
-                <p>клиентов приходят к нам по рекомендации</p>
-            </article>
+        <section class="metrics reveal">
+            <div class="container metrics-grid">
+                <article><strong>120+</strong><p>реализованных фотозон</p></article>
+                <article><strong>5 лет</strong><p>опыта в декоре событий</p></article>
+                <article><strong>24/7</strong><p>на связи по проекту</p></article>
+                <article><strong>90%</strong><p>клиентов приходят по рекомендациям</p></article>
+            </div>
         </section>
 
         <section id="projects" class="projects container reveal">
             <div class="section-head">
                 <p class="eyebrow">Портфолио</p>
-                <h2>Проекты, после которых гости еще долго пересматривают фото</h2>
+                <h2>Каждый проект разный, но во всех есть характер и настроение</h2>
             </div>
 
-            <div class="project-grid">
-                <article class="project-card large">
-                    <img src="./фото/antoha.jpg" alt="Фотозона для праздничного события">
-                    <div class="project-info">
-                        <h3>Свадебная фотозона «Теплый свет»</h3>
-                        <p>Нежная палитра, живые фактуры и мягкий свет для теплой атмосферы.</p>
+            <div class="mosaic">
+                <article class="card card-xl">
+                    <img src="./фото/antoha.jpg" alt="Свадебная фотозона">
+                    <div class="card-text">
+                        <h3>Свадебная история</h3>
+                        <p>Нежная композиция с живыми фактурами и мягким светом.</p>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <img src="./фото/anotherblog.jpg" alt="Фотозона для бренд-мероприятия">
-                    <div class="project-info">
-                        <h3>Бренд-зона для корпоратива</h3>
-                        <p>Собрали фотозону в фирменных цветах, чтобы каждый кадр поддерживал стиль бренда.</p>
+                <article class="card card-md">
+                    <img src="./фото/anotherblog.jpg" alt="Корпоративная фотозона">
+                    <div class="card-text">
+                        <h3>Корпоратив</h3>
+                        <p>Фотозона в фирменном стиле бренда.</p>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <img src="./фото/бусы.jpg" alt="Авторская фотозона с декором">
-                    <div class="project-info">
-                        <h3>Инсталляция «Арка эмоций»</h3>
-                        <p>Объем, цветы и детали, которые хочется рассматривать не только на фото, но и вживую.</p>
+                <article class="card card-sm">
+                    <img src="./фото/бусы.jpg" alt="Инсталляция с декором">
+                    <div class="card-text">
+                        <h3>Инсталляция</h3>
+                        <p>Яркий акцент для вау-кадров.</p>
                     </div>
                 </article>
 
-                <article class="project-card wide">
-                    <img src="./фото/blog-fest.jpg" alt="Праздничная фотозона для фестиваля">
-                    <div class="project-info">
-                        <h3>Фестивальная фотозона</h3>
-                        <p>Яркая композиция для большого потока гостей и активного контента в соцсетях.</p>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <img src="./фото/куб.jpg" alt="Современная геометричная фотозона">
-                    <div class="project-info">
+                <article class="card card-wide">
+                    <img src="./фото/куб.jpg" alt="Геометричная фотозона">
+                    <div class="card-text">
                         <h3>Геометрия и свет</h3>
-                        <p>Лаконичный стиль и световые акценты для чистых, стильных кадров.</p>
+                        <p>Чистый стиль и графичные формы.</p>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <img src="./фото/zitrek.jpg" alt="Фотозона для дня рождения">
-                    <div class="project-info">
-                        <h3>День рождения под ключ</h3>
-                        <p>Продумали все под именинника, чтобы настроение праздника читалось в каждой детали.</p>
+                <article class="card card-sm">
+                    <img src="./фото/lili.jpg" alt="Элегантная фотозона">
+                    <div class="card-text">
+                        <h3>Элегантный вечер</h3>
+                        <p>Спокойная палитра и дорогой визуал.</p>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <img src="./фото/lili.jpg" alt="Элегантная фотозона для частного события">
-                    <div class="project-info">
-                        <h3>Элегантная классика</h3>
-                        <p>Спокойный, аккуратный стиль с эффектом дорогого и цельного образа.</p>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <img src="./фото/selfi.jpg" alt="Яркая фотозона для молодежного мероприятия">
-                    <div class="project-info">
-                        <h3>Яркий pop-up формат</h3>
-                        <p>Контрастные цвета и живой ритм для молодежных, шумных и очень фотогеничных событий.</p>
+                <article class="card card-md">
+                    <img src="./фото/selfi.jpg" alt="Яркая молодежная фотозона">
+                    <div class="card-text">
+                        <h3>Динамичный pop-up</h3>
+                        <p>Контраст и энергия для активного контента.</p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="advantages" class="advantages container reveal">
+        <section id="approach" class="approach container reveal">
             <div class="section-head">
-                <p class="eyebrow">Почему с нами легко</p>
-                <h2>Берем на себя весь процесс: от первой идеи до готовой фотозоны</h2>
+                <p class="eyebrow">Почему мы</p>
+                <h2>Работаем спокойно, быстро и с вниманием к деталям</h2>
             </div>
-
-            <div class="adv-grid">
+            <div class="approach-grid">
                 <article>
-                    <h3>Концепция под вас</h3>
-                    <p>Не работаем по шаблону. Собираем идею под вашу аудиторию, формат события и площадку.</p>
+                    <h3>Идея под ваше событие</h3>
+                    <p>Сначала слушаем задачу, потом предлагаем решение, которое работает именно у вас.</p>
                 </article>
                 <article>
                     <h3>Собственное производство</h3>
-                    <p>Сами контролируем изготовление, поэтому держим качество и сроки без лишней суеты.</p>
+                    <p>Контролируем качество и сроки без лишних посредников.</p>
                 </article>
                 <article>
-                    <h3>Четкий тайминг</h3>
-                    <p>Заранее согласуем монтаж и демонтаж, чтобы не мешать работе площадки и команде.</p>
+                    <h3>Прозрачная смета</h3>
+                    <p>Фиксируем бюджет заранее, без сюрпризов на финале.</p>
                 </article>
                 <article>
-                    <h3>Вау-эффект в кадре</h3>
-                    <p>Фотозоны выглядят эффектно и вживую, и на фото, и в видео гостей.</p>
+                    <h3>Результат в кадре</h3>
+                    <p>Фотозона выглядит эффектно вживую и на фото гостей.</p>
                 </article>
             </div>
         </section>
 
-        <section id="workflow" class="workflow container reveal">
+        <section id="steps" class="steps container reveal">
             <div class="section-head">
-                <p class="eyebrow">Как мы работаем</p>
-                <h2>Как мы работаем в 4 шага</h2>
+                <p class="eyebrow">Этапы</p>
+                <h2>От запроса до готовой локации за 4 шага</h2>
             </div>
             <ol>
-                <li>
-                    <span>01</span>
-                    <div>
-                        <h3>Созвон и бриф</h3>
-                        <p>Обсуждаем формат события, площадку, бюджет и ваши пожелания по стилю.</p>
-                    </div>
-                </li>
-                <li>
-                    <span>02</span>
-                    <div>
-                        <h3>Идея и смета</h3>
-                        <p>Показываем визуальную концепцию, подбираем материалы и согласуем стоимость.</p>
-                    </div>
-                </li>
-                <li>
-                    <span>03</span>
-                    <div>
-                        <h3>Подготовка и производство</h3>
-                        <p>Изготавливаем декор и заранее готовим все, чтобы монтаж прошел спокойно.</p>
-                    </div>
-                </li>
-                <li>
-                    <span>04</span>
-                    <div>
-                        <h3>Монтаж в день события</h3>
-                        <p>Приезжаем вовремя, собираем фотозону и передаем вам полностью готовую локацию.</p>
-                    </div>
-                </li>
+                <li><span>01</span><p>Короткий созвон и бриф.</p></li>
+                <li><span>02</span><p>Концепция, референсы и смета.</p></li>
+                <li><span>03</span><p>Изготовление и подготовка декора.</p></li>
+                <li><span>04</span><p>Монтаж в день события и сдача проекта.</p></li>
             </ol>
         </section>
 
         <section id="contact" class="contact container reveal">
-            <div class="contact-card">
-                <p class="eyebrow">Давайте обсудим ваш проект</p>
-                <h2>Напишите нам, и мы предложим несколько идей фотозоны именно под ваше событие</h2>
-                <p class="contact-note">В рабочее время обычно отвечаем в течение 15 минут.</p>
-
-                <div class="contact-links">
-                    <a href="tel:+79604440382">+7 (960) 444-03-82</a>
-                    <a href="mailto:pin18@bk.ru">pin18@bk.ru</a>
-                    <a href="https://t.me/lemiwedd" target="_blank" rel="noopener noreferrer">Telegram: @lemiwedd</a>
+            <div class="contact-panel">
+                <div class="contact-copy">
+                    <p class="eyebrow">Готовы обсудить вашу идею?</p>
+                    <h2>Напишите нам, и мы предложим 2-3 концепции под ваше событие</h2>
+                    <p>Обычно отвечаем в течение 15 минут в рабочее время.</p>
+                    <div class="contact-links">
+                        <a href="tel:+79604440382">+7 (960) 444-03-82</a>
+                        <a href="mailto:pin18@bk.ru">pin18@bk.ru</a>
+                        <a href="https://t.me/lemiwedd" target="_blank" rel="noopener noreferrer">Telegram: @lemiwedd</a>
+                    </div>
                 </div>
-
                 <form class="contact-form">
                     <input type="text" placeholder="Ваше имя" required>
                     <input type="tel" placeholder="Ваш телефон" required>
-                    <textarea placeholder="Дата события, город, формат мероприятия, примерный бюджет" rows="4"></textarea>
+                    <textarea placeholder="Дата события, город, формат, бюджет" rows="4"></textarea>
                     <label class="policy-row">
                         <input type="checkbox" required>
                         <span>Согласен с <a href="./политика кофиденциальности /politic.html">политикой конфиденциальности</a></span>
